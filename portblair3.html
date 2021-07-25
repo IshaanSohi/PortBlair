@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Port Blair</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Noto Sans', sans-serif;
+    }
+
+    header {
+        display: flex;
+        height: fit-content;
+        border: 1px solid silver;
+        align-items: center;
+
+    }
+
+    #it1 {
+        display: flex;
+        flex-direction: row;
+        -ms-flex-align: start;
+    }
+
+    #it2 {
+        margin-left: auto;
+        margin-right: 2%;
+
+    }
+
+    .it img {
+        height: 9vh;
+    }
+
+    #it2 a {
+
+        text-decoration: none;
+        color: black;
+    }
+
+    .navbar ul {
+        text-align: center;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    @media (max-width: 370px) {
+        .navbar {
+            flex-direction: column;
+        }
+    }
+
+    .navbar div {
+        padding: 2vh 2vw 3vh 2vw;
+        margin-bottom: 1%;
+    }
+
+    .navbar div:hover {
+        background-color: rgb(245, 245, 255);
+        border: 1px solid rgb(215, 215, 223);
+        border-radius: 4px;
+    }
+
+    footer {
+        background-color: #f2f2f2;
+        height: fit-content;
+        padding: 2vw;
+    }
+
+    .foo1 ul {
+        line-height: 5vh;
+    }
+
+    .foo1 ul li {
+
+        list-style-type: none;
+        display: inline;
+    }
+
+    .foo1 {
+        margin-left: 5vw;
+        display: inline-block;
+        /* border: 2px solid red;*/
+        height: fit-content;
+        width: fit-content;
+        padding: 3vh;
+
+    }
+
+    .foo1 ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .foo2 {
+        position: absolute;
+        left: 35vw;
+        display: inline-block;
+        /* border: 2px solid red; */
+        height: fit-content;
+        width: fit-content;
+        padding: 3vh;
+    }
+
+    .foo2 img {
+        height: 7vh;
+        margin-left: 1vw;
+    }
+
+    .foo3 ul {
+        text-align: center;
+    }
+
+    .foo3 ul li {
+        display: inline;
+    }
+
+    .main {
+        background-color: thistle;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .txt1 {
+        font-size: large;
+        position: relative;
+        width: 40vw;
+
+    }
+
+    .vid iframe {
+        padding: 5vw;
+        width: 46vw;
+        height: 50vh;
+    }
+
+    .head1 {
+        color: burlywood;
+        text-align: center;
+        font-size: x-large;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .map {
+        /* width: fit-content;
+    margin: 1vh 20vw;
+    padding: 1vh; */
+        margin: 1vh 27vw;
+        padding: 2vw;
+
+    }
+
+    .main2 {
+        /* background-color: rgb(0, 141, 7); */
+        background-image: url(https://images.unsplash.com/photo-1545121436-87364761152c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80);
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: rgb(255, 0, 34);
+        text-align: center;
+        font-weight: bolder;
+    }
+
+    .main3 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+           }
+
+    .box1 {
+        background-color: cadetblue;
+        /* height: 50vh; */
+        width: 32vw;
+    }
+
+    .box2 {
+        background-color: red;
+        /* height: 50vh; */
+        width: 32vw;
+    }
+
+    .box3 {
+        background-color: rosybrown;
+        /* height: 50vh; */
+        width: 32vw;
+    }
+    #pic1{
+        align-items: center;
+        align-content: center;
+    }
+    #b1h{
+        text-align: center;
+        color: red;
+    }
+    #b2h{
+        text-align: center;
+        color: darkgreen;
+    }
+    #pic2{
+        align-items: center;
+        align-content: center;
+    }
+    #pic3{
+        align-items: center;
+        align-content: center;
+    }
+    .head2{
+        text-align: center;
+        font-weight: bolder;
+        font-size: large;
+        color: darkslategray;
+    }
+</style>
+
+<body>
+    <header>
+        <div class="it" id="it1"><img src="logo.png" alt=""></div>
+        <div class="it" id="it2"><a href="">Join Us</a></div>
+        <div class="it" id="it3"> <img src="dropdown icon.png" alt=""></div>
+
+    </header>
+    <br>
+    <div class="navbar">
+        <div>Home</div>
+        <div class="Neil">Places to Visit</div>
+        <div>Food</div>
+        <div>Hotels</div>
+        <div>How to Reach</div>
+        <div>Activities</div>
+    </div>
+    <div class="head1">
+        <h1>Port Blair</h1>
+    </div>
+    <div class="main">
+        <div class="txt1">Port Blair is the capital city of the Andaman and
+            Nicobar Islands, a union territory of India in the Bay of Bengal. It is also the local administrative
+            sub-division (tehsil) of the islands, the headquarters for the district of South Andaman and is the
+            territory's
+            only notified town.
+            Port Blair serves as the entry point for visiting the Andaman and Nicobar Islands. Port Blair is connected
+            with
+            mainland India by both air and sea. It is a 2-to-3-hour flight from mainland India to Port Blair's Veer
+            Savarkar
+            International Airport, and 3–4 days by sea to reach Kolkata, Chennai, or Visakhapatnam from Haddo Wharf in
+            Port
+            Blair. It is home to several museums and a major naval base INS Jarawa of the Indian Navy, along with sea
+            and
+            air bases of the Indian Coast Guard, Andaman and Nicobar Police, Andaman and Nicobar Command, the first
+            integrated tri-command of the Indian Armed Forces and the Indian Air Force.Port Blair is also famous for the
+            historic Cellular Jail and other small islands like Corbyn's Cove, Wandoor, Ross Island, Viper Island etc.
+            which were once home to British colonists. Port Blair has been selected as one of the cities to be developed
+            as
+            a smart city under the Smart Cities.</div>
+        <div class="vid"><iframe width="560" height="315" src="https://www.youtube.com/embed/sqdvRn6XvQQ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe></div>
+    </div>
+    <div class="main2">
+        <h1>How to Reach?</h1>
+        <div class="map"><iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125058.24485385779!2d92.65200414451526!3d11.61834895504349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3088946c176b5971%3A0x5bfa43a5e9a5ed30!2sPort%20Blair%2C%20Andaman%20and%20Nicobar%20Islands!5e0!3m2!1sen!2sin!4v1627064237852!5m2!1sen!2sin"
+                width="100%" height="500vh" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+    </div>
+    <div class="head2"><h1>Attractions-</h1></div>
+    <div class="main3">
+        <div class="box1">
+            <h2 id="b1h">Cellular Jail</h2>
+            <img id="pic1" src="https://www.makemytrip.com/travel-guide/media/dg_image/port_blair/Cellular-Jail1.jpg"
+                width="100%" height="300px" alt=""> The Cellular Jail, also known as Kālā Pānī (lit. 'Black Waters'),
+            was a colonial prison in the Andaman and
+            Nicobar Islands, India. The prison was used by the British government for the purpose of exiling political
+            prisoners to the remote archipelago. Many notable independence activists, including Batukeshwar Dutt,
+            Yogendra Shukla, V.O. Chidambaram Pillai and Vinayak Damodar Savarkar were imprisoned here during the
+            struggle for India's independence. Today, the complex serves as a national memorial monument.
+        </div>
+        <div class="box2">
+            
+            <h2 id="b2h">Corbyn’s Cove</h2>
+            <img id="pic2"
+                src="https://media-cdn.tripadvisor.com/media/photo-s/0a/a4/e8/03/corbyn-s-cove-beach-waer.jpg"
+                width="100%" height="300px" alt="">
+            Surrounded by lush green palms, this happens to be one of the busier beaches in the Andamans. It’s located
+            right outside of Port Blair about 8 km. The drive there itself is a scenic treat to the eyes. Many
+            entertainment options like jetski and other water activities make it a popular destination amongst tourists.
+            Enjoy a relaxing drink with your friends at the beach facing the cafe when you are here. The blue benches
+            lining the area make for a great seat to enjoy the view.
+
+
+        </div>
+        <div class="box3">
+            <h2 id="b3h">Samudrika Naval marine museum</h2>
+            <img id="pic3"
+                src="https://andamantourism.org.in/images/places-to-visit/header/samudrika-naval-marine-museum-andaman-tourism-entry-fee-timings-holidays-reviews-header.jpg"
+                width="100%" height="300px" alt="">
+            This museum is a perfect blend of historical and modern Andaman. A massive
+            blue whale, in its skeletal form,
+            of course, greets you as you enter the museum. There is also an aquarium with fish of all shapes and sizes,
+            from a parrotfish to the rare and venomous species of stonefish and corals. Do stop by the gift shop on your
+            way back to get some souvenirs back home for your loved ones.
+        </div>
+
+    </div>
+    <footer>
+        <div class="foo1">
+            <ul>
+                <p>HEADING</p><br><br>
+                <li><a href="#">HOME</a></li><br>
+                <li><a href="#">ABOUT</a></li><br>
+                <li><a href="#">CAREER</a></li><br>
+                <li><a href="#">WORK WITH US</a></li><br>
+                <li><a href="#">CONTACT</a></li><br>
+            </ul>
+        </div>
+        <div class="foo2">
+            <ul>
+                <p>Follow us on </p><br><br>
+                <a href=""><img
+                        src="https://misstourist.com/wp-content/themes/mts_child/assets/svg/source/social-facebook.svg"
+                        alt=""></a>
+                <a href=""><img
+                        src="https://misstourist.com/wp-content/themes/mts_child/assets/svg/source/social-instagram-color.svg"
+                        alt=""></a>
+                <a href=""> <img
+                        src="https://misstourist.com/wp-content/themes/mts_child/assets/svg/source/social-twitter-color.svg"
+                        alt=""></a>
+            </ul>
+        </div>
+
+        <div class="foo3">
+            <ul>
+                <li>Copyright 2020-2024 |</li>
+                <li>All right reserved |</li>
+                <li>Terms and Conditions |</li>
+                <li>Privacy policy</li>
+            </ul>
+        </div>
+
+
+
+</html>
+</body>
+
+</html>
